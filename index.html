@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="survey-form">
+            <h1>Survey Form</h1>
+            <p>Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not
+                Convenient In Answering A Particular Question Please Skip It By Answering "No". Every Answer Would Be
+                Very Appreciated. Thank You For Your Time.</p>
+
+            <div>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="user@user.com" required>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="9999999999" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <select id="age" name="age" required>
+                        <option value="15-20">15-20</option>
+                        <option value="20-30">20-30</option>
+                        <option value="31-40">31-40</option>
+                        <option value="41-50">41-50</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Where Do You Live?</label>
+                    <select id="location" name="location" required>
+                        <option value="select">Select</option>
+                        <option value="select">Kolkata</option>
+                        <option value="select">Delhi</option>
+                        <option value="select">Bengaluru</option>
+                        <option value="select">Pune</option>
+                        <option value="select">Mumbai</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="proficiency">How would you rate your proficiency in coding?</label>
+                    <select id="proficiency" name="proficiency" required>
+                        <option value="novice">Novice</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="form-group">
+                    <label for="passion">What drives your passion for coding and outline your aspirations?</label>
+                    <textarea id="passion" name="passion" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contest">Have You Ever Appeared in any coding contest?</label>
+                    <select id="contest" name="contest" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="challenges">What are some of the challenges you face while coding?</label>
+                    <textarea id="challenges" name="challenges" rows="4" required></textarea>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="data-structures">Please list the Data Structures you have a strong understanding
+                        of:</label>
+                    <textarea id="data-structures" name="data-structures" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
